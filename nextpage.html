@@ -7,11 +7,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #4CAF50; /* 统一背景色 */
+            background-color: black; /* 黑色背景 */
+            color: white; /* 白色文字 */
         }
         .header {
-            background-color: #d35400; /* 标题栏颜色 */
-            color: white;
+            background-color: white; /* 白色标题栏 */
+            color: black; /* 黑色文字 */
             padding: 20px;
             text-align: center;
         }
@@ -19,28 +20,38 @@
             padding: 20px;
         }
         .section {
-            background-color: white;
+            background-color: #f0f0f0; /* 灰色块 */
             margin: 10px 0;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(255,255,255,0.1); /* 白色阴影 */
+        }
+        .pattern {
+            background-image: url('pattern.png'); /* 使用图案 */
+            background-size: cover;
+            padding: 50px; /* 更大的填充区域 */
+            border-radius: 5px;
         }
         h1, h2 {
-            color: #d35400; /* 统一标题颜色 */
+            color: white; /* 黑白色标题 */
         }
-        p {
-            color: #27ae60; /* 文本颜色 */
+        .icon-text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
         }
-        ul {
+        .icon {
+            font-size: 24px; /* 图标大小 */
+            margin-right: 10px;
+        }
+        .contact-info {
             list-style: none; /* 去除列表点 */
             padding: 0;
         }
-        li {
-            margin-bottom: 10px; /* 列表项间距 */
-        }
-        li::before {
-            content: "♥ "; /* 列表项前的装饰符号 */
-            color: #2980b9; /* 装饰符号颜色 */
+        .contact-info li::before {
+            content: "• ";
+            color: white; /* 列表项前的装饰符号颜色 */
+            font-size: 28px; /* 符号大小 */
         }
     </style>
 </head>
@@ -49,29 +60,36 @@
         <h1>智能制造技术协会</h1>
     </div>
     <div class="content">
-        <div class="section">
-            <h2>欢迎词</h2>
-            <p>欢迎加入智能制造技术协会，这里是汇聚全球智能制造技术爱好者和专家的平台。</p>
+        <div class="section pattern">
+            <div class="icon-text">
+                <div class="icon">👋</div>
+                <h2>欢迎词</h2>
+            </div>
         </div>
-        <div class="section">
-            <h2>使命宣言</h2>
-            <p>我们的使命是推动智能制造技术的发展，为成员提供学习、交流和发展的机会。</p>
+        <div class="section pattern">
+            <div class="icon-text">
+                <div class="icon">🎯</div>
+                <h2>使命宣言</h2>
+            </div>
         </div>
-        <div class="section">
-            <h2>最新消息</h2>
-            <p>查看关于智能制造领域的最新动态和技术突破。</p>
+        <div class="section pattern">
+            <div class="icon-text">
+                <div class="icon">📣</div>
+                <h2>最新消息</h2>
+            </div>
         </div>
-        <div class="section">
-            <h2>会员福利</h2>
-            <p>加入我们，享受专业培训、会议、网络资源等一系列会员专属福利。</p>
+        <div class="section pattern">
+            <div class="icon-text">
+                <div class="icon">💼</div>
+                <h2>会员福利</h2>
+            </div>
         </div>
         <div class="section">
             <h2>联系方式</h2>
-            <p>有任何问题，欢迎通过以下方式联系我们：</p>
-            <ul>
-                <li>电邮：contact@imta.example.com</li>
-                <li>电话：123-456-7890</li>
-                <li>地址：某某街道某某大厦</li>
+            <ul class="contact-info">
+                <li>1192829850@qq.com</li>
+                <li>18315133671</li>
+                <li>重庆邮电大学</li>
             </ul>
         </div>
     </div>
