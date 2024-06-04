@@ -1,59 +1,66 @@
-<!DOCTYPE html>  
-<html lang="zh">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>智能制造技术协会首页</title>  
-    <style>  
-        body {  
-            font-family: Arial, sans-serif;  
-            margin: 0;  
-            padding: 0;  
-            display: flex;  
-            justify-content: center;  
-            align-items: center;  
-            height: 100vh;  
-            background-color: #f2f2f2;  
-        }  
-  
-        .btn-container {  
-            text-align: center;  
-        }  
-  
-        .btn {  
-            display: inline-block;  
-            padding: 10px 20px;  
-            font-size: 16px;  
-            color: white;  
-            background-color: #3498db;  
-            border: none;  
-            border-radius: 5px;  
-            cursor: pointer;  
-            text-decoration: none;  
-            transition: background-color 0.3s;  
-        }  
-  
-        .btn:hover {  
-            background-color: #2980b9;  
-        }  
-  
-        .logo {  
-            text-align: center;  
-            margin-bottom: 20px;  
-        }  
-  
-        .logo img {  
-            max-width: 200px;  
-            height: auto;  
-        }  
-    </style>  
-</head>  
-<body>  
-    <div class="logo">  
-        <img src="your-association-logo.png" alt="智能制造技术协会标志"> <!-- 替换为你的协会标志图片 -->  
-    </div>  
-    <div class="btn-container">  
-        <a href="nextpage.html" class="btn">了解更多</a>  
-    </div>  
-</body>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能制造技术协会</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #4CAF50; /* 更鲜艳的背景色 */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            text-align: center;
+            background-color: #ffffff; /* 白色背景 */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 加深了阴影 */
+        }
+
+        h1 {
+            color: #d35400; /* 更鲜艳的标题色 */
+        }
+
+        .welcome-text {
+            color: #27ae60; /* 清新的文本颜色 */
+            margin-top: 20px;
+        }
+
+        .decoration {
+            color: #2980b9; /* 蓝色装饰符号 */
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .next-page-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #3498db; /* 蓝色按钮 */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .next-page-button:hover {
+            background-color: #2980b9; /* 按钮悬停效果 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎来到智能制造技术协会</h1>
+        <p class="welcome-text">探索、创新、前进</p>
+        <p class="decoration">♥</p>
+        <button class="next-page-button" onclick="window.location.href='nextpage.html';">进入下一页</button>
+    </div>
+</body>
 </html>
