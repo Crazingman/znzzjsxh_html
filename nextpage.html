@@ -7,10 +7,10 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #4CAF50; /* 统一背景色 */
         }
         .header {
-            background-color: #007bff;
+            background-color: #d35400; /* 标题栏颜色 */
             color: white;
             padding: 20px;
             text-align: center;
@@ -25,8 +25,22 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        h2 {
-            color: #007bff;
+        h1, h2 {
+            color: #d35400; /* 统一标题颜色 */
+        }
+        p {
+            color: #27ae60; /* 文本颜色 */
+        }
+        ul {
+            list-style: none; /* 去除列表点 */
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px; /* 列表项间距 */
+        }
+        li::before {
+            content: "♥ "; /* 列表项前的装饰符号 */
+            color: #2980b9; /* 装饰符号颜色 */
         }
     </style>
 </head>
